@@ -1,0 +1,12 @@
+LIBEHCA_1.0 {
+	global:
+	        ibv_driver_init;
+		openib_driver_init;
+	 	ehcau_query_qp;
+	 	ehcau_query_qp_da;
+		ehcau_send_wr_trigger;
+		ehcau_recv_wr_trigger;
+		ehcau_write_swqe;
+		ehcau_write_rwqe;
+	local: *;
+};

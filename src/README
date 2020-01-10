@@ -1,0 +1,24 @@
+Introduction
+============
+
+libehca is a userspace driver for IBM InfiniBand HCAs (ehca).
+It works as a plug-in module for libibverbs that allows programs
+to use IBM InfiniBand HCAs hardware directly from userspace.
+See the libibverbs package for more information.
+
+Using libehca
+==============
+
+First the ib_ehca kernel module must be loaded for IBM InfiniBand
+HCA devices to be detected and used. libehca will then be loaded
+and used automatically by programs linked with libibverbs.
+If applications want to utilize certain ehca's specific features
+like xxx, yyy, they must be linked with libehca in addtion of
+libibverbs.
+
+Supported Hardware
+==================
+
+libehca currently supports the following IBM InfiniBand HCAs:
+- GX Dual-port 4x IB HCA
+- GX Dual-port 12x IB HCA
