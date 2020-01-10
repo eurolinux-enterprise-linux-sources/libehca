@@ -1,6 +1,6 @@
 Name: libehca
 Version: 1.2.2
-Release: 3%{?dist}
+Release: 5%{?dist}
 Summary: IBM InfiniBand HCA Userspace Driver
 Group: System Environment/Libraries
 License: GPLv2 or BSD
@@ -51,6 +51,13 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*.a
 
 %changelog
+* Mon Mar 03 2014 Doug Ledford <dledford@redhat.com> - 1.2.2-5
+- Bump and rebuild against latest libibverbs
+- Related: bz1062281
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.2.2-4
+- Mass rebuild 2013-12-27
+
 * Mon Jan 23 2012 Doug Ledford <dledford@redhat.com> - 1.2.2-3
 - Bump and rebuild against latest libibverbs (FDR support)
 - Related: bz750609
